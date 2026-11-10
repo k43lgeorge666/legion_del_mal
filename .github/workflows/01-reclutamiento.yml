@@ -7,7 +7,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      name: El agente se presenta
-      run: echo "Soy lex luthor, y lider de la legion del mal"
-      
+      - name: El agente se presenta
+        run: echo "Soy lex luthor, y lider de la legion del mal"
+
+      - name: Reporte de identidad
+        run: |
+          echo "reporte de identidad"
+          echo ""
+          echo "Nombre Clave: ${{ github.actor }}"
+          echo ""
+          echo "Contexto de github"
+          echo "Repo: ${{ github.repository }}"
+          echo "Operacion: ${{ github.sha }}"
+
+
 
