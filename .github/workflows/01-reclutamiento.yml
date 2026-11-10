@@ -1,0 +1,13 @@
+name: reclutamiento de Agente
+
+on: push
+
+jobs:
+  reporte-de-reclutamiento:
+    runs-on: ubuntu-latest
+
+    steps:
+      name: El agente se presenta
+      run: echo "Soy lex luthor, y lider de la legion del mal"
+      
+
